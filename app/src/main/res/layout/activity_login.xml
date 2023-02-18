@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ic_launcher_foreground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    tools:ignore="ExtraText">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="UserName"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:helperText="Required*"
+        app:helperTextTextColor="#C60000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:startIconDrawable="@drawable/icons8_customer_50">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameLogin"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:maxLength="20" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="password_toggle"
+        app:helperText="Required*"
+        app:helperTextTextColor="#C60000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:startIconDrawable="@drawable/icons8_password_key_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="65dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
